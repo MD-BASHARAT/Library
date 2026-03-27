@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elite Library | Premium Digital Reading Experience</title>
+<meta name="description" content="Welcome to Elite Library, a premium digital platform offering infinite knowledge, modern facilities, and a distraction-free reading experience for modern scholars.">
+<meta name="keywords" content="digital library, books, research, premium reading, AI knowledge graph">
+
+<!-- CSS LINK -->
+<link rel="stylesheet" href="style.css">
+
+<!-- GOOGLE FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Elite Library</h1>
+
+    <div class="menu-toggle" id="menuToggle">☰</div>
+
+    <nav id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="features.html">Features</a>
+        <a href="membership.html">Membership</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+
+    <!-- BACKGROUND GLOW -->
+    <div class="hero-bg"></div>
+
+    <!-- FLOATING BOOKS -->
+    <div class="floating-books">
+        <div class="book">📘</div>
+        <div class="book">📕</div>
+        <div class="book">📗</div>
+        <div class="book">📙</div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="hero-content">
+        <h2 id="typingText"></h2>
+        <p></p>
+        <button onclick="scrollToBooks()">Explore Collection</button>
+    </div>
+
+</section>
+
+<section class="values-section" id="features">
+    <div class="values-bg"></div>
+    <div class="values-header">
+        <h2 class="about-title text-center">Our Features</h2>
+        <p class="text-center opacity-70">Discover what makes our platform exceptional</p>
+    </div>
+    
+    <div class="values-grid">
+        <div class="value-card feature-card glass-card">
+            <div class="value-icon">🏢</div>
+            <h3>Modern Facility</h3>
+            <p>State-of-the-art infrastructure designed for comfort and productivity.</p>
+        </div>
+        <div class="value-card feature-card glass-card">
+            <div class="value-icon">🎓</div>
+            <h3>Education</h3>
+            <p>Access curated academic resources and interactive learning materials.</p>
+        </div>
+        <div class="value-card feature-card glass-card">
+            <div class="value-icon">📍</div>
+            <h3>Perfect Place</h3>
+            <p>A calm, focused, and distraction-free environment for reading and research.</p>
+        </div>
+        <div class="value-card feature-card glass-card">
+            <div class="value-icon">💳</div>
+            <h3>Membership</h3>
+            <p>Highly flexible membership plans with exclusive premium benefits.</p>
+        </div>
+        <div class="value-card feature-card glass-card">
+            <div class="value-icon">📡</div>
+            <h3>Free Wi-Fi</h3>
+            <p>High-speed wireless internet access across all reading areas.</p>
+        </div>
+        <div class="value-card feature-card glass-card">
+            <div class="value-icon">🔒</div>
+            <h3>Security</h3>
+            <p>24/7 top-tier security and surveillance for a perfectly safe environment.</p>
+        </div>
+    </div>
+</section>
+
+<!-- GLOBAL REACH STATISTICS -->
+<section class="stats-section">
+    <div class="stats-container">
+        <div class="stat-box glass-card">
+            <h3>1M+</h3>
+            <p>Digital Volumes</p>
+        </div>
+        <div class="stat-box glass-card">
+            <h3>500k</h3>
+            <p>Active Readers</p>
+        </div>
+        <div class="stat-box glass-card">
+            <h3>24/7</h3>
+            <p>Unrestricted Access</p>
+        </div>
+        <div class="stat-box glass-card">
+            <h3>150+</h3>
+            <p>Supported Formats</p>
+        </div>
+    </div>
+</section>
+
+<!-- SPLIT SCREEN COLLECTION REPLACEMENT -->
+<section class="home-split-section" id="books">
+    <div class="split-container">
+        <!-- Left Side: Text and Categories -->
+        <div class="split-left glass-card">
+            <h2 class="split-title">Master Your Mind.</h2>
+            <p class="split-text">Step into endless dimensions of knowledge. Our vaults hold the greatest collections of human discovery, tailored for an ultimate immersive reading experience.</p>
+            
+            <ul class="split-list">
+                <li>
+                    <span class="icon">🌌</span>
+                    <div>
+                        <strong>Fiction & Fantasy</strong>
+                        <p>Immerse yourself in legendary worlds.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="icon">🧬</span>
+                    <div>
+                        <strong>Science & Physics</strong>
+                        <p>Unlock the secrets of the universe.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="icon">💻</span>
+                    <div>
+                        <strong>Technology & AI</strong>
+                        <p>Access cutting-edge digital development.</p>
+                    </div>
+                </li>
+            </ul>
+            <button class="split-btn" onclick="window.location.href='features.html'">Explore Features</button>
+        </div>
+        
+        <!-- Right Side: Visual -->
+        <div class="split-right">
+            <div class="split-visual-glow"></div>
+            <div class="floating-stack">
+                <div class="stack-card sc-1"></div>
+                <div class="stack-card sc-2"></div>
+                <div class="stack-card sc-3"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+
+    <!-- WAVE -->
+    <div class="footer-wave">
+        <svg viewBox="0 0 1440 320">
+            <path fill="#020617" fill-opacity="1"
+                d="M0,160L60,170C120,180,240,200,360,186.7C480,173,600,127,720,122.7C840,117,960,149,1080,170.7C1200,192,1320,202,1380,208L1440,213L1440,0L0,0Z">
+            </path>
+        </svg>
+    </div>
+
+    <div class="footer-container">
+
+        <div class="footer-col">
+            <h2>Elite Library</h2>
+            <p>Premium digital reading platform with modern UI and smart features.</p>
+        </div>
+
+        <div class="footer-col">
+            <h3>Explore</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html#books">Books</a></li>
+                <li><a href="membership.html">Membership</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Contact</h3>
+            <p>Email: support@library.com</p>
+            <p>Phone: +91 98765 43210</p>
+
+            <!-- SOCIAL -->
+            <div class="socials">
+                <span>🌐</span>
+                <span>📘</span>
+                <span>🐦</span>
+                <span>📸</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Elite Library | Crafted with Premium UI</p>
+    </div>
+
+</footer>
+
+<!-- JS LINK -->
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Membership | Elite Library</title>
+<meta name="description" content="Unlock the full potential of human knowledge. Choose from our Starter, Pro, Elite, or Ultimate membership plans and join our global community of readers.">
+
+<!-- CSS LINK -->
+<link rel="stylesheet" href="style.css">
+
+<!-- GOOGLE FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+<!-- GSAP CORE & SCROLLTRIGGER -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body class="membership-page">
+
+<header>
+    <h1>Elite Library</h1>
+    <div class="menu-toggle" id="menuToggle">☰</div>
+    <nav id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="features.html">Features</a>
+        <a href="membership.html" class="active">Membership</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="m-hero premium-hero">
+    <div class="m-hero-bg"></div>
+    <div class="m-hero-content">
+        <h1 class="m-title">Choose Your <br> <span>Legacy.</span></h1>
+        <p class="m-subtitle">Unlock the full potential of human knowledge with our premium membership tiers designed for the modern elite reader.</p>
+    </div>
+    <div class="m-hero-visual">
+        <div class="floating-ring mr1"></div>
+        <div class="floating-ring mr2"></div>
+        <div class="floating-ring mr3"></div>
+    </div>
+</section>
+
+<!-- PRICING SECTION -->
+<section class="pricing-section">
+    <div class="pricing-container">
+        
+        <!-- 1 MONTH -->
+        <div class="price-card glass-card">
+            <div class="p-header">
+                <span class="p-duration">1 Month</span>
+                <h3>Starter</h3>
+                <div class="p-amount">$12<span>/mo</span></div>
+            </div>
+            <ul class="p-features">
+                <li><span>✓</span> 1M+ Digital Volumes</li>
+                <li><span>✓</span> Standard Reading Mode</li>
+                <li><span>✓</span> Cross-Device Sync</li>
+                <li class="disabled"><span>✕</span> Offline Access</li>
+            </ul>
+            <button class="p-btn">Get Started</button>
+        </div>
+
+        <!-- 3 MONTHS -->
+        <div class="price-card glass-card">
+            <div class="p-tag">Popular</div>
+            <div class="p-header">
+                <span class="p-duration">3 Months</span>
+                <h3>Pro</h3>
+                <div class="p-amount">$30<span>/qtr</span></div>
+            </div>
+            <ul class="p-features">
+                <li><span>✓</span> Everything in Starter</li>
+                <li><span>✓</span> Ambient Focus Audio</li>
+                <li><span>✓</span> Advanced Annotations</li>
+                <li><span>✓</span> priority Support</li>
+            </ul>
+            <button class="p-btn">Select Pro</button>
+        </div>
+
+        <!-- 6 MONTHS -->
+        <div class="price-card glass-card featured">
+            <div class="p-tag">Best Value</div>
+            <div class="p-header">
+                <span class="p-duration">6 Months</span>
+                <h3>Elite</h3>
+                <div class="p-amount">$55<span>/sem</span></div>
+            </div>
+            <ul class="p-features">
+                <li><span>✓</span> Everything in Pro</li>
+                <li><span>✓</span> Offline Reading Mode</li>
+                <li><span>✓</span> AI Knowledge Graph</li>
+                <li><span>✓</span> Early Feature Access</li>
+            </ul>
+            <button class="p-btn p-btn-primary">Become Elite</button>
+        </div>
+
+        <!-- 1 YEAR -->
+        <div class="price-card glass-card">
+            <div class="p-header">
+                <span class="p-duration">1 Year</span>
+                <h3>Ultimate</h3>
+                <div class="p-amount">$99<span>/yr</span></div>
+            </div>
+            <ul class="p-features">
+                <li><span>✓</span> Unlimited Access</li>
+                <li><span>✓</span> Family Sharing (3 Users)</li>
+                <li><span>✓</span> Physical Book Discounts</li>
+                <li><span>✓</span> Concierge Support</li>
+            </ul>
+            <button class="p-btn">Go Ultimate</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- MEMBERSHIP BENEFITS -->
+<section class="m-benefits">
+    <h2 class="section-center-title">Exclusive Privileges</h2>
+    <div class="benefits-grid">
+        <div class="benefit-box glass-card">
+            <div class="b-icon">🚀</div>
+            <h4>Infinity Speed</h4>
+            <p>Experience zero latency while browsing our massive high-resolution catalog.</p>
+        </div>
+        <div class="benefit-box glass-card">
+            <div class="b-icon">🔒</div>
+            <h4>Privacy First</h4>
+            <p>Your reading habits and notes are encrypted with military-grade standards.</p>
+        </div>
+        <div class="benefit-box glass-card">
+            <div class="b-icon">🌍</div>
+            <h4>Global Community</h4>
+            <p>Join exclusive discussions with authors and scholars around the world.</p>
+        </div>
+        <div class="benefit-box glass-card">
+            <div class="b-icon">💡</div>
+            <h4>Smart Insights</h4>
+            <p>Receive personalized reading recommendations powered by advanced AI.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-wave">
+        <svg viewBox="0 0 1440 320">
+            <path fill="#020617" fill-opacity="1" d="M0,160L60,170C120,180,240,200,360,186.7C480,173,600,127,720,122.7C840,117,960,149,1080,170.7C1200,192,1320,202,1380,208L1440,213L1440,0L0,0Z"></path>
+        </svg>
+    </div>
+    <div class="footer-container">
+        <div class="footer-col">
+            <h2>Elite Library</h2>
+            <p>Premium digital reading platform with modern UI and smart features.</p>
+        </div>
+        <div class="footer-col">
+            <h3>Explore</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="membership.html">Membership</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Contact</h3>
+            <p>Email: support@library.com</p>
+            <p>Phone: +91 98765 43210</p>
+            <div class="socials">
+                <span>🌐</span>
+                <span>📘</span>
+                <span>🐦</span>
+                <span>📸</span>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 Elite Library | Crafted with Premium UI</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="membership.js"></script>
+</body>
+</html>

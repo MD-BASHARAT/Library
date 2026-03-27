@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Features | Elite Library</title>
+<meta name="description" content="Explore our symphony of features including AI Knowledge Graphs, Retina Typography, and Immersive Distraction-Free reading modes.">
+
+<!-- CSS LINK -->
+<link rel="stylesheet" href="style.css">
+
+<!-- GOOGLE FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+<!-- GSAP CORE & SCROLLTRIGGER -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body class="features-page">
+
+<header>
+    <h1>Elite Library</h1>
+    <div class="menu-toggle" id="menuToggle">☰</div>
+    <nav id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="features.html" class="active">Features</a>
+        <a href="membership.html">Membership</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<!-- PREMIUM HERO -->
+<section class="f-hero">
+    <div class="f-hero-bg"></div>
+    <div class="f-hero-content">
+        <h1 class="f-hero-title">Experience <br> <span>Perfection.</span></h1>
+        <p class="f-hero-subtitle">Every pixel, interaction, and mechanism engineered for an incredibly profound reading experience.</p>
+    </div>
+    <div class="f-hero-visual">
+        <div class="floating-ring r1"></div>
+        <div class="floating-ring r2"></div>
+        <div class="floating-ring r3"></div>
+    </div>
+</section>
+
+<!-- SCROLL SEQUENCE: BENTO 2.0 -->
+<section class="f-bento-section">
+    <div class="f-section-title-wrap">
+        <h2 class="f-section-title">A Symphony of Features</h2>
+    </div>
+    
+    <div class="f-bento-grid">
+        <div class="f-card f-span-col-2 f-span-row-2">
+            <h3 class="f-card-title">AI Knowledge Graph</h3>
+            <p class="f-card-text">Connect concepts across thousands of volumes instantly. Our proprietary AI understands context vividly.</p>
+            <div class="f-card-ui-mock">
+                <!-- Abstract glowing UI -->
+                <div class="f-node n-center"></div>
+                <div class="f-node n-orbit-1"></div>
+                <div class="f-node n-orbit-2"></div>
+                <div class="f-node n-orbit-3"></div>
+                <svg class="f-lines" width="100%" height="100%"><circle cx="50%" cy="50%" r="40" stroke="rgba(56,189,248,0.3)" fill="none" stroke-width="1" stroke-dasharray="4 4" /></svg>
+            </div>
+            <!-- Modern Big Review Graph -->
+            <div class="f-modern-graph">
+                <svg viewBox="0 0 100 100" class="modern-chart">
+                    <defs>
+                        <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#38bdf8"/>
+                            <stop offset="100%" stop-color="#818cf8"/>
+                        </linearGradient>
+                        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+                            <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+                            <feMerge>
+                                <feMergeNode in="coloredBlur"/>
+                                <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+                        </filter>
+                    </defs>
+                    <path class="modern-bg" d="M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80" />
+                    <path class="modern-primary" filter="url(#glow)" stroke="url(#gradient1)" stroke-dasharray="246.2, 251.2" d="M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80" />
+                    
+                    <text x="50" y="47" class="modern-number">4.9</text>
+                    <text x="50" y="62" class="modern-stars">★★★★★</text>
+                </svg>
+                <div class="modern-label">
+                    <span>98%</span> Positive Feedback
+                </div>
+            </div>
+        </div>
+        
+        <div class="f-card">
+            <h3 class="f-card-title">Retina Typography</h3>
+            <p class="f-card-text">Crisp fonts tailored for zero eye fatigue.</p>
+            <div class="f-card-letter">A</div>
+        </div>
+        
+        <div class="f-card">
+            <h3 class="f-card-title">Cloud Sync</h3>
+            <p class="f-card-text">Your bookmarks traverse through all devices instantly.</p>
+            <div class="f-card-icon">☁️</div>
+        </div>
+        
+        <div class="f-card f-span-col-2">
+            <h3 class="f-card-title">Immersive Distraction-Free Mode</h3>
+            <p class="f-card-text">Enter a state of flow with a single click. The UI fades away, leaving only you and your thoughts.</p>
+            <div class="f-gradient-sweep"></div>
+        </div>
+    </div>
+
+    <!-- NEW DUAL PANEL IN FEATURES -->
+    <div class="f-dual-panel">
+        <div class="f-dp-left glass-card">
+            <h3>Limitless Customization</h3>
+            <p>Adjust font weights, letter spacing, dark mode contrast, and multi-column views to create an environment that fits your unique reading style perfectly.</p>
+            <ul class="f-dp-list">
+                <li><span>✦</span> Adaptive Brightness</li>
+                <li><span>✦</span> Dyslexia-Friendly Fonts</li>
+                <li><span>✦</span> Margin Controls</li>
+            </ul>
+        </div>
+        <div class="f-dp-right glass-card">
+            <div class="f-dp-visual">
+                <div class="f-dp-glow"></div>
+                <div class="f-dp-abstract-book">
+                    <div class="b-page b-page-1"></div>
+                    <div class="b-page b-page-2"></div>
+                    <div class="b-page b-page-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- INFINITE MARQUEE SECTION -->
+<section class="f-marquee-wrap">
+    <div class="f-marquee">
+        <span>READ.</span>
+        <span>DISCOVER.</span>
+        <span>EVOLVE.</span>
+        <span>IMAGINE.</span>
+        <span>READ.</span>
+        <span>DISCOVER.</span>
+        <span>EVOLVE.</span>
+        <span>IMAGINE.</span>
+    </div>
+    <div class="f-marquee f-marquee-reverse">
+        <span>KNOWLEDGE.</span>
+        <span>FOCUS.</span>
+        <span>SUCCESS.</span>
+        <span>FUTURE.</span>
+        <span>KNOWLEDGE.</span>
+        <span>FOCUS.</span>
+        <span>SUCCESS.</span>
+        <span>FUTURE.</span>
+    </div>
+</section>
+
+<!-- HORIZONTAL SCROLL PANEL SECTION -->
+<section class="f-horizontal-panel">
+    <div class="f-sticky-container">
+        <h2 class="f-horizontal-title">The Master Toolkit</h2>
+        <div class="f-cards-wrapper">
+            <div class="f-horiz-card h-card-1">
+                <div class="h-card-content">
+                    <div class="t-icon" style="font-size: 2.5rem; margin-bottom: 15px; text-shadow: 0 0 20px rgba(56,189,248,0.5);">🧠</div>
+                    <h3>Smart Annotations</h3>
+                    <p>Highlight text and our system will auto-generate beautiful summary notes.</p>
+                </div>
+            </div>
+            <div class="f-horiz-card h-card-2">
+                <div class="h-card-content">
+                    <div class="t-icon" style="font-size: 2.5rem; margin-bottom: 15px; text-shadow: 0 0 20px rgba(56,189,248,0.5);">🎧</div>
+                    <h3>Ambient Audio</h3>
+                    <p>Built-in focus sounds ranging from rain, cafes, to deep space hums.</p>
+                </div>
+            </div>
+            <div class="f-horiz-card h-card-3">
+                <div class="h-card-content">
+                    <div class="t-icon" style="font-size: 2.5rem; margin-bottom: 15px; text-shadow: 0 0 20px rgba(56,189,248,0.5);">🌌</div>
+                    <h3>Dark Matter Mode</h3>
+                    <p>An OLED-optimized pure black mode that saves battery and looks stunning.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CALL TO ACTION -->
+<section class="f-cta">
+    <h2 class="f-cta-text">Ready to transform your reading?</h2>
+    <a href="contact.html" class="f-cta-btn">Unlock Elite Access</a>
+</section>
+
+<!-- Footer from index.html -->
+<footer class="footer">
+    <div class="footer-wave">
+        <svg viewBox="0 0 1440 320">
+            <path fill="#020617" fill-opacity="1" d="M0,160L60,170C120,180,240,200,360,186.7C480,173,600,127,720,122.7C840,117,960,149,1080,170.7C1200,192,1320,202,1380,208L1440,213L1440,0L0,0Z"></path>
+        </svg>
+    </div>
+    <div class="footer-container">
+        <div class="footer-col">
+            <h2>Elite Library</h2>
+            <p>Premium digital reading platform with modern UI and smart features.</p>
+        </div>
+        <div class="footer-col">
+            <h3>Explore</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html#books">Books</a></li>
+                <li><a href="membership.html">Membership</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Contact</h3>
+            <p>Email: support@library.com</p>
+            <p>Phone: +91 98765 43210</p>
+            <div class="socials">
+                <span>🌐</span>
+                <span>📘</span>
+                <span>🐦</span>
+                <span>📸</span>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 Elite Library | Crafted with Premium UI</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="features.js"></script>
+</body>
+</html>

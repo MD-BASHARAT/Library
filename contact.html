@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Elite Library</title>
+<meta name="description" content="Get in touch with our team of digital curators and technical experts. We're here to assist you with any inquiries about our premium library services.">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>Elite Library</h1>
+    <div class="menu-toggle" id="menuToggle">☰</div>
+    <nav id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="features.html">Features</a>
+        <a href="membership.html">Membership</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+</header>
+
+<!-- CONTACT HERO SECTION (Features Design) -->
+<section class="f-hero">
+    <div class="f-hero-bg"></div>
+    
+    <div class="f-hero-content text-center" style="max-width: 800px;">
+        <h1 class="f-hero-title">Get in <br> <span>Touch.</span></h1>
+        <p class="f-hero-subtitle">Our team of digital curators and technical experts are standing by to assist you. Drop us a line.</p>
+    </div>
+    
+    <div class="f-hero-visual">
+        <div class="floating-ring r1"></div>
+        <div class="floating-ring r2"></div>
+        <div class="floating-ring r3"></div>
+    </div>
+</section>
+
+<section class="contact-section" style="padding-top: 50px;">
+    <div class="contact-container">
+        <!-- Info Panel -->
+        <div class="contact-info glass-card">
+            <h3>Contact Information</h3>
+            <p>Fill up the form and our team will get back to you within 24 hours.</p>
+            
+            <div class="info-item">
+                <div class="info-icon">📞</div>
+                <div>
+                    <h4>Phone</h4>
+                    <p>+91 98765 43210</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <div class="info-icon">✉️</div>
+                <div>
+                    <h4>Email</h4>
+                    <p>support@elitelibrary.com</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div>
+                    <h4>Location</h4>
+                    <p>123 Knowledge Ave, NY 10001</p>
+                </div>
+            </div>
+            
+            <div class="contact-socials">
+                <span class="social-circle">🌐</span>
+                <span class="social-circle">📘</span>
+                <span class="social-circle">🐦</span>
+                <span class="social-circle">📸</span>
+            </div>
+        </div>
+
+        <!-- Form Panel -->
+        <div class="contact-form glass-card">
+            <h3 class="form-title">Send Message</h3>
+            <form id="contactForm">
+                <div class="input-group">
+                    <input type="text" id="name" required placeholder=" ">
+                    <label for="name">Your Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" required placeholder=" ">
+                    <label for="email">Your Email</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="subject" required placeholder=" ">
+                    <label for="subject">Subject</label>
+                </div>
+                <div class="input-group">
+                    <textarea id="message" rows="5" required placeholder=" "></textarea>
+                    <label for="message">Message</label>
+                </div>
+                <button type="submit" class="contact-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Map Full Width Panel -->
+    <div class="contact-map-wrapper glass-card">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115132.8610724647!2d-74.13467652758252!3d40.7135096971932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </div>
+</section>
+
+<!-- Footer from index.html -->
+<footer class="footer">
+    <div class="footer-wave">
+        <svg viewBox="0 0 1440 320">
+            <path fill="#020617" fill-opacity="1" d="M0,160L60,170C120,180,240,200,360,186.7C480,173,600,127,720,122.7C840,117,960,149,1080,170.7C1200,192,1320,202,1380,208L1440,213L1440,0L0,0Z"></path>
+        </svg>
+    </div>
+    <div class="footer-container">
+        <div class="footer-col">
+            <h2>Elite Library</h2>
+            <p>Premium digital reading platform with modern UI and smart features.</p>
+        </div>
+        <div class="footer-col">
+            <h3>Explore</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="membership.html">Membership</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Contact</h3>
+            <p>Email: support@library.com</p>
+            <p>Phone: +91 98765 43210</p>
+            <div class="socials">
+                <span>🌐</span>
+                <span>📘</span>
+                <span>🐦</span>
+                <span>📸</span>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 Elite Library | Crafted with Premium UI</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="contact.js"></script>
+</body>
+</html>
